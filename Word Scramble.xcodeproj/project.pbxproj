@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2427E7D2474884B00759A5E /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F2427E7C2474884B00759A5E /* start.txt */; };
 		F28F499C24738AC700D013C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F499B24738AC700D013C9 /* AppDelegate.swift */; };
 		F28F499E24738AC700D013C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F499D24738AC700D013C9 /* SceneDelegate.swift */; };
 		F28F49A024738AC700D013C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F499F24738AC700D013C9 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2427E7C2474884B00759A5E /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		F28F499824738AC700D013C9 /* Word Scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28F499B24738AC700D013C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F28F499D24738AC700D013C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				F28F49A724738AC900D013C9 /* Assets.xcassets */,
 				F28F49A924738AC900D013C9 /* LaunchScreen.storyboard */,
 				F28F49AC24738AC900D013C9 /* Info.plist */,
+				F2427E7C2474884B00759A5E /* start.txt */,
 				F28F49A424738AC700D013C9 /* Word_Scramble.xcdatamodeld */,
 			);
 			path = "Word Scramble";
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28F49AB24738AC900D013C9 /* LaunchScreen.storyboard in Resources */,
+				F2427E7D2474884B00759A5E /* start.txt in Resources */,
 				F28F49A824738AC900D013C9 /* Assets.xcassets in Resources */,
 				F28F49A324738AC700D013C9 /* Main.storyboard in Resources */,
 			);
