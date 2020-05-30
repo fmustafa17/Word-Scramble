@@ -15,6 +15,7 @@
 		F28F49A624738AC700D013C9 /* Word_Scramble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F28F49A424738AC700D013C9 /* Word_Scramble.xcdatamodeld */; };
 		F28F49A824738AC900D013C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28F49A724738AC900D013C9 /* Assets.xcassets */; };
 		F28F49AB24738AC900D013C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28F49A924738AC900D013C9 /* LaunchScreen.storyboard */; };
+		F297E67E248214B500E2BE77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297E67D248214B500E2BE77 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F28F49A724738AC900D013C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F28F49AA24738AC900D013C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F28F49AC24738AC900D013C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F297E67D248214B500E2BE77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F28F499B24738AC700D013C9 /* AppDelegate.swift */,
 				F28F499D24738AC700D013C9 /* SceneDelegate.swift */,
 				F28F499F24738AC700D013C9 /* ViewController.swift */,
+				F297E67D248214B500E2BE77 /* Constants.swift */,
 				F28F49A124738AC700D013C9 /* Main.storyboard */,
 				F28F49A724738AC900D013C9 /* Assets.xcassets */,
 				F28F49A924738AC900D013C9 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F297E67E248214B500E2BE77 /* Constants.swift in Sources */,
 				F28F49A024738AC700D013C9 /* ViewController.swift in Sources */,
 				F28F499C24738AC700D013C9 /* AppDelegate.swift in Sources */,
 				F28F49A624738AC700D013C9 /* Word_Scramble.xcdatamodeld in Sources */,

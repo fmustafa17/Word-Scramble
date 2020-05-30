@@ -88,12 +88,15 @@ class ViewController: UITableViewController {
         return misspelledRange.location == NSNotFound
     }
     
+    func showErrorMessage(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+
+    }
+    
     func submit(_ answer: String) {
         let lowerAnswer = answer.lowercased()
-        
-        let errorTitle: String
-        let errorMessage: String
-        
         if isPossible(word: lowerAnswer) {
             if isOriginal(word: lowerAnswer) {
                 if isReal(word: lowerAnswer) {
@@ -103,21 +106,14 @@ class ViewController: UITableViewController {
                     tableView.insertRows(at: [indexPath], with: .automatic)
                     return
                 } else {
-                    errorTitle = "Word not recognized"
-                    errorMessage = "You can't just make them up, you know!"
+                    showErrorMessage(title: Constants.wordNotRecognizedTitle, message: Constants.wordNotRecognizedMessage)
                 }
             } else {
-                errorTitle = "Word used already"
-                errorMessage = "Enter a different word"
+                showErrorMessage(title: Constants.wordUsedTitle, message: Constants.wordUsedMessage)
             }
         } else {
-            guard let title = title?.lowercased() else { return }
-            errorTitle = "Word not possible"
-            errorMessage = "You can't spell that word from \(title)"
+            showErrorMessage(title: Constants.wordNotPossibleTitle, message: Constants.wordNotPossibleMessage)
         }
-        let ac = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
     }
 
 }
