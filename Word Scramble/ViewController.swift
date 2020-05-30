@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UITableViewController {
     var allWords = [String]()
     var usedWords = [String]()
+    var startWord: String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,8 @@ class ViewController: UITableViewController {
     }
 
     func startGame() {
-        title = allWords.randomElement()
+        startWord = allWords.randomElement()
+        title = startWord
         usedWords.removeAll(keepingCapacity: true)
         tableView.reloadData()
     }
@@ -70,10 +72,16 @@ class ViewController: UITableViewController {
     }
     
     func isOriginal(word: String) -> Bool {
+        if word == startWord {
+            return false
+        }
         return !usedWords.contains(word)
     }
     
     func isReal(word: String) -> Bool {
+        if word.count < 3 {
+            return false
+        }
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
